@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table:hover,
+tr:hover,
+thead:hover {
+  background: none !important;
+}
+body.dark {
+ background: black;
+  color: white;
+}
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background: ghostwhite;
+}
+.ant-table-tbody > tr.ant-table-row:hover > td {
+ @apply dark:bg-gray-800
+}
+.ant-table-tbody > th.ant-table-row:hover > td {
+  background: none !important;
+}
+
+.ant-table-cell{
+  @apply dark:bg-gray-800 #{!important};
+  @apply dark:text-white #{!important}
+}
+.ant-table-cell{
+  background: white;
+}
+.ant-pagination{
+  @apply dark:bg-gray-800 #{!important};
+  & .ant-pagination-item{
+     a{
+      @apply dark:text-white
+    }
+
+  }
+}
+.ant-pagination-item-active{
+  & a{
+    @apply dark:text-black #{!important}
+  }
+}

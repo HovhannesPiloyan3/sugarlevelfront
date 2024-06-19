@@ -1,0 +1,20 @@
+.Home{
+  &-container-search{
+      padding: 30px 10%;
+  }
+  &-container-table{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    &-search{
+      padding: 20px;
+    }
+    &-filters{
+    }
+    &-table{
+      width: 80%;
+
+    }
+  }
+
+}
